@@ -13,7 +13,7 @@
         <label for="body"></label>
         <input id="body" v-model="formData.body" name="" placeholder="Post" type="text">
       </div>
-      <div class="button">
+      <div class="custom-button">
         <button class="btn btn-primary">CREATE POST</button>
         <button class="btn btn-primary">
           <nuxt-link to="/">HOME</nuxt-link>
@@ -69,25 +69,11 @@ input {
   box-sizing: border-box;
 }
 
-button {
-  margin: 50px 20px;
-}
-
-.button {
+.custom-button {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-button a {
-  color: #ffffff;
-}
-
-
-.btn-primary a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
 </style>

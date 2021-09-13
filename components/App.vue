@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="button">
+    <div class="custom-button">
       <button class="btn btn-primary" @click="getPosts">VIEW POST</button>
       <button class="btn btn-primary">
         <nuxt-link to="/newpost">CREATE POST</nuxt-link>
@@ -44,10 +44,10 @@ export default {
 
 <style>
 button {
-  margin: 50px 20px;
+  margin: 20px;
 }
 
-.button {
+.custom-button {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
   justify-content: center;
@@ -59,6 +59,10 @@ button a {
   color: #ffffff;
 }
 
+.btn-primary {
+  font-size: 30px;
+  font-weight: 700;
+}
 
 .btn-primary a:hover {
   color: #ffffff;
